@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html>
  <head>
-   <title>Games</title>
-  <style>
+   <h2>Голосування за гру року</h2>
+<div class="vote">
+<div class="card" style="width: 18rem;">
+  <img src="https://th.bing.com/th/id/OIP.NoBdOU2xb3H_T6ktU1UHsAHaEK?w=279&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="0" >
+  <div class="card-body">
+    <h5 class="card-title">Xenoblade Chronicles 3</h5>
+    <p class="card-text">Xenoblade Chronicles 3 — японская ролевая игра, разработанная компанией Monolith Soft для консоли Nintendo Switch.</p>
+<button data-name="God of War" type="button" class="btn btn-info">голосувати</button>
+      <span id ="GOW">0</span>
+  </div>
+
+ <div class="card" style="width: 18rem;">
+  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202107/1612/Y5RHNmzAtc6sRYwZlYiKHAxN.png" class="card-img-top" alt="0" >
+  <div class="card-body">
+    <h5 class="card-title">Elden Ring</h5>
+    <p class="card-text">Elden Ring — ролевая игра 2022 года, разработанная FromSoftware и опубликованная Bandai Namco Entertainment.</p>
+    
+<button  data-name="Elden Ring" type="button" class="btn btn-success">голосувати</button>
+    
+      <span id ="ER">0</span>
+  </div> 
    
+
+   
+   
+  <div class="card" style="width: 18rem;">
+  <img src="https://th.bing.com/th/id/OIP.52Yu15t9ppMb62lXNILmZgHaEK?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="0" >
+  <div class="card-body">
+    <h5 class="card-title">Stray</h5>
+    <p class="card-text">Stray — это приключенческая игра 2022 года, разработанная BlueTwelve Studio и опубликованная Annapurna Interactive. История рассказывает о бездомном коте, который попадает в город, населенный роботами.</p>
+    
+<button  data-name="Horizon" type="button" class="btn btn-danger">голосувати</button>
+    
+      <span id ="HFW">0</span>
+  </div>  
+  
+  <style>
+   .vote{
+  flex-flow: row;
+ 
+}
+div{
+  font-family:Comic Sans MS;
+  margin-row:5px;
+}
+
   </style> 
   <script>
-   
+   document.addEventListener('click',(e)=>{
+  if(e.target.dataset.name==="God of War"){
+    let count = document.querySelector("#GOW")
+    count.innerText = parseInt(count.innerText)+1
+  }
+  
+    if(e.target.dataset.name==="Elden Ring"){
+    let count = document.querySelector("#ER")
+    count.innerText = parseInt(count.innerText)+1
+  }
+  
+   if(e.target.dataset.name==="Horizon"){
+    let count = document.querySelector("#HFW")
+    count.innerText = parseInt(count.innerText)+1
+  } 
+  
+  
+  
+  
+  
+})
   </script> 
  </head> 
   <body>
-    <H1>My favorite Games</H1>
+  
   </body>
    <ul>
-   <li>games 1</li>
-   <li>games 2</li>
-     
+
  </ul>
 </html>
